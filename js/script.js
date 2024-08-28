@@ -11,7 +11,6 @@ document.getElementById('submitName').addEventListener('click', function() {
 });
 
 
-
 // form output
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Mencegah form dari reload halaman

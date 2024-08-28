@@ -56,6 +56,7 @@ nav {
     transform: scaleX(0.5);
 }
 
+
 /* Main Style */
 
 .input-container {
@@ -68,7 +69,8 @@ nav {
     border-radius: 4px;
     margin-right: 10px;
     font-size: 14px;
-    width: 200px; /* Lebar input dikurangi */
+    width: 200px;
+    /* Lebar input dikurangi */
     display: flex;
 }
 
@@ -203,4 +205,87 @@ button:hover {
 /* Footer */
 .footer-item {
     text-align: end;
+}
+
+/* Media Query untuk layar kecil (ponsel) */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .form-container,
+    .output-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #userName.small-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #submitName.small-button {
+        width: 100%;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-item {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .banner-img {
+        height: 200px;
+    }
+}
+
+/* Media Query untuk layar sedang (tablet) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .form-container,
+    .output-container {
+        width: 48%;
+    }
+
+    .profile-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .profile-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .banner-img {
+        height: 300px;
+    }
 }
