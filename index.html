@@ -21,32 +21,35 @@
       </header>
 
       <section class="nav-container">
-        <a href="#" class="nav-item">Home</a>
-        <a href="#" class="nav-item">Profile</a>
+        <a href="#Home" class="nav-item">Home</a>
+        <a href="#Profile" class="nav-item">Profile</a>
         <a href="#" class="nav-item">Achievment</a>
-        <a href="#" class="nav-item">Contact</a>
+        <a href="#Contact" class="nav-item">Contact</a>
       </section>
     </nav>
-    <hr />
     <!-- Header End -->
-
+    <!-- Input Nama -->
+    <div class="input-container">
+      <label for="userName">Masukkan Nama Anda:</label>
+      <input type="text" id="userName" class="small-input" placeholder="Nama" />
+      <button id="submitName" class="small-button">Submit</button>
+    </div>
     <!-- Main Content -->
-    <main>
+    <main id="Home" class="main-container">
       <article>
         <header>
-          <h1>Welcome user, To My Website</h1>
+          <h1 id="welcomeMessage">Welcome user, To My Website</h1>
         </header>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-          sapiente.
+          Hi im Muhammad Rumii Welcome to my Portofolio Website, Enjoy!!
         </p>
 
         <div class="banner-img"></div>
       </article>
       <hr />
       <!-- Profile Content -->
-      <section>
+      <section id="Profile">
         <header>
           <h1>My Profile</h1>
         </header>
@@ -59,25 +62,25 @@
           </div>
 
           <div class="profile-item">
-            <div class="profile-img"></div>
+            <div class="profile-img1"></div>
 
-            <h2>Software Engineer</h2>
+            <h2>Student</h2>
           </div>
 
           <div class="profile-item">
-            <div class="profile-img"></div>
+            <div class="profile-img2"></div>
 
-            <h2>Software Engineer</h2>
+            <h2>FrontEnd Dev</h2>
           </div>
         </section>
       </section>
       <hr />
       <!-- Profile End -->
       <!--Form Start -->
-      <div class="container">
+      <div id="Contact" class="container">
         <div class="form-container">
           <h2>Message Us</h2>
-          <form action="#" method="post">
+          <form id="contactForm">
             <div class="form-group">
               <label for="name">Nama :</label>
               <input
@@ -118,24 +121,29 @@
           </form>
         </div>
         <!-- Output Form -->
-        <div class="output-container">
+        <div
+          class="output-container"
+          id="outputContainer"
+          style="display: none"
+        >
+          <p><strong>Current time :</strong> <span id="currentTime"></span></p>
+          <p><strong>Nama :</strong> <span id="outputName"></span></p>
+          <p><strong>Tanggal Lahir :</strong> <span id="outputDob"></span></p>
           <p>
-            <strong>Current time :</strong> Fri Jun 17 2022 11:27:28 GMT+0100
+            <strong>Jenis Kelamin :</strong> <span id="outputGender"></span>
           </p>
-          <p><strong>Nama :</strong> Harl Novian</p>
-          <p><strong>Tanggal Lahir :</strong> 01/11/1985</p>
-          <p><strong>Jenis Kelamin :</strong> Laki-Laki</p>
-          <p><strong>Pesan :</strong> Lagi Belajar buat Website</p>
+          <p><strong>Pesan :</strong> <span id="outputMessage"></span></p>
         </div>
       </div>
       <!-- Form End -->
     </main>
-    <hr>
+    <hr />
     <!-- Main End -->
-     <!-- Footer Start -->
+    <!-- Footer Start -->
     <footer class="footer-item">
       <p>Create by MuhammadRumii</p>
     </footer>
-     <!-- Footer End -->
+    <!-- Footer End -->
+    <script src="js/script.js"></script>
   </body>
 </html>

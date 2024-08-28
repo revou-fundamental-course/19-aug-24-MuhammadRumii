@@ -1,12 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* Header style */
 nav {
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
 }
 
 .logo-icon {
@@ -49,6 +57,36 @@ nav {
 }
 
 /* Main Style */
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#userName.small-input {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 200px; /* Lebar input dikurangi */
+    display: flex;
+}
+
+#submitName.small-button {
+    padding: 3px 8px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+}
+
+#submitName.small-button:hover {
+    background-color: #0056b3;
+}
+
 .banner-img {
     height: 460px;
     background-image: url(/img/banner.jpg);
@@ -71,6 +109,24 @@ nav {
 .profile-img {
     height: 100px;
     background-image: url(/img/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.profile-img1 {
+    height: 100px;
+    background-image: url(/img/profile1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.profile-img2 {
+    height: 100px;
+    background-image: url(/img/profile2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
