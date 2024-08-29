@@ -88,11 +88,26 @@ nav {
     background-color: #0056b3;
 }
 
-.banner-img {
+.img-slideshow {
     height: 460px;
-    width: 1330px;
+    width: 1332px;
     background-size: cover;
     background-position: top;
+}
+
+#slideshow {
+    padding: 3px 8px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+}
+
+#slideshow:hover {
+    background-color: #0056b3;
 }
 
 /* Profile */
@@ -205,6 +220,11 @@ button:hover {
 
 /* Media Query untuk layar kecil (ponsel) */
 @media (max-width: 600px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
     .nav-container {
         flex-direction: column;
         align-items: center;
@@ -222,7 +242,7 @@ button:hover {
 
     .form-container,
     .output-container {
-        width: 100%;
+        width: 425px;
         margin-bottom: 20px;
     }
 
@@ -245,8 +265,9 @@ button:hover {
         font-size: 14px;
     }
 
-    .banner-img {
+    .img-slideshow {
         height: 200px;
+        width: 465px;
     }
 }
 
@@ -281,7 +302,8 @@ button:hover {
         margin-bottom: 20px;
     }
 
-    .banner-img {
+    .img-slideshow {
         height: 300px;
+        width: 724px;
     }
 }
