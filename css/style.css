@@ -246,6 +246,10 @@ button:hover {
         margin-bottom: 20px;
     }
 
+    button {
+        width: 395px;
+    }
+
     #userName.small-input {
         width: 100%;
         margin-bottom: 10px;
